@@ -24,7 +24,7 @@ const ProductsMiniature = () => {
                             : "flex justify-center text-accent text-xl py-4"
                     }
                 >
-                    BEST SELLERS
+                    EXCLUSIVE PRODUCTS
                 </button>
                 <button
                     onClick={() => toggleTab(2)}
@@ -35,7 +35,7 @@ const ProductsMiniature = () => {
                             : "flex justify-center text-accent text-xl py-4"
                     }
                 >
-                    HOT PRODUCTS
+                    NEW COLLECTION 
                 </button>
                 <button
                     onClick={() => toggleTab(3)}

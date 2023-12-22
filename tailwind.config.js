@@ -10,7 +10,6 @@ export default {
       lg: { min: "992px", max: "1200px" },
       xl: { min: "1201px", max: "1280px" },
       xxl: { min: "1281px", max: "1440px" },
-      xxxl: { min: "1441px", max: "1536px" },
     },
 
     extend: {
