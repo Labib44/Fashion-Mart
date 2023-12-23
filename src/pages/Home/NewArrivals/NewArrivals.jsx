@@ -22,7 +22,7 @@ const NewArrivals = () => {
         {
             id: 1,
             img: img1,
-            title: "Lorem Ipsum",
+            title: "T-Shirt",
             price: 230.00,
             oldPrice: 260.00,
             review: 3.5,
@@ -30,7 +30,7 @@ const NewArrivals = () => {
         {
             id: 2,
             img: img2,
-            title: "Lorem Ipsum",
+            title: "Floral Dress",
             price: 130.00,
             oldPrice: 160.00,
             review: 3.5,
@@ -38,7 +38,7 @@ const NewArrivals = () => {
         {
             id: 3,
             img: img3,
-            title: "Lorem Ipsum",
+            title: "T-Shirt",
             price: 30.00,
             oldPrice: 60.00,
             review: 3.5,
@@ -46,7 +46,7 @@ const NewArrivals = () => {
         {
             id: 4,
             img: img4,
-            title: "Lorem Ipsum",
+            title: "Belted Dress",
             price: 199.00,
             oldPrice: 189.00,
             review: 3.5,
@@ -54,7 +54,7 @@ const NewArrivals = () => {
         {
             id: 5,
             img: img5,
-            title: "Lorem Ipsum",
+            title: "T-Shirt",
             price: 130.00,
             oldPrice: 170.00,
             review: 3.5,
@@ -62,7 +62,7 @@ const NewArrivals = () => {
         {
             id: 6,
             img: img6,
-            title: "Lorem Ipsum",
+            title: "T-Shirt",
             price: 259.00,
             oldPrice: 299.00,
             review: 3.5,
