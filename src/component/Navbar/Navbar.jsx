@@ -44,7 +44,7 @@ const Navbar = () => {
                     </div>
                     <div className="items-center flex md:hidden sm:hidden">
                         <Link className="text-4xl text-red-500 mr-3"><Icon icon="mdi:cart-outline" /></Link>
-                        <Link className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Login</Link>
+                        <Link to={'/login'} className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Login</Link>
                     </div>
                     <div className="hidden md:block sm:block">
                         <button className="p-4 hidden lg:block md:block sm:block"
@@ -59,7 +59,7 @@ const Navbar = () => {
                             <ul className="absolute z-50 left-0 p-2 pb-5 shadow bg-base-100 w-full">
                                 {menuItem}
                                 <div className="mt-5">
-                                    <Link className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Login</Link>
+                                    <Link to={'/login'} className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Login</Link>
                                 </div>
 
                             </ul>
