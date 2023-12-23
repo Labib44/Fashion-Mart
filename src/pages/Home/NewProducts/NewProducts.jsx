@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 
 import img1 from '../../../assets/home/newArrivals/1.jpg'
-import img2 from '../../../assets/home/NewArrivals/2.jpg'
+import img2 from '../../../assets/home/newArrivals/12.jpg'
 import img3 from '../../../assets/home/NewArrivals/3.jpg'
 import img4 from '../../../assets/home/NewArrivals/4.jpg'
 import img5 from '../../../assets/home/NewArrivals/5.jpg'
