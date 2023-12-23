@@ -12,7 +12,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 
 import img1 from '../../../assets/home/newArrivals/1.jpg'
 import img2 from '../../../assets/home/newArrivals/12.jpg'
-import img3 from '../../../assets/home/NewArrivals/3.jpg'
+import img3 from '../../../assets/home/newArrivals/11.jpg'
 import img4 from '../../../assets/home/newArrivals/10.jpg'
 import img5 from '../../../assets/home/newArrivals/11.jpg'
 import img6 from '../../../assets/home/newArrivals/13.jpg'
