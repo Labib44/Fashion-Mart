@@ -5,6 +5,7 @@ import Shop from "../../pages/Shop/Shop";
 import ProductDetails from "../../pages/ProductDetails/ProductDetails";
 import Login from "../../pages/Account/Login";
 import SignUp from "../../pages/Account/SignUp";
+import PrivateRouter from "../PrivateRouter/PrivateRouter";
 
 const routers= createBrowserRouter([
     {
@@ -17,17 +18,18 @@ const routers= createBrowserRouter([
                 path:'/shop', element:<Shop></Shop>
             },
             {
-                path:'/productDetails', element:<ProductDetails></ProductDetails>
+                path:'/productDetails', element:<PrivateRouter><ProductDetails></ProductDetails></PrivateRouter>
+            },
+            {
+                path:'/login', element:<Login></Login>
+            },
+            {
+                path:'/signUp', element:<SignUp></SignUp>
             },
         ]
     },
 
-    {
-        path:'/login', element:<Login></Login>
-    },
-    {
-        path:'/signUp', element:<SignUp></SignUp>
-    },
+   
 ])
 
 export default routers;
