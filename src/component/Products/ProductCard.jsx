@@ -3,11 +3,12 @@ import { BsSuitHeartFill } from "react-icons/bs";
 import { GiReturnArrow } from "react-icons/gi";
 import { FaShoppingCart } from "react-icons/fa";
 import { MdOutlineLabelImportant } from "react-icons/md";
+import { Link } from "react-router-dom";
 // import Badge from "./Badge";
 
 
 const ProductCard = ({ product }) => {
-    const { name, price, color, imageUrl } = product
+    const {_id, name, price, color, imageUrl } = product
     return (
         <div className="w-full relative group">
             <div className="max-w-80 max-h-80 relative overflow-y-hidden ">
@@ -37,7 +38,7 @@ const ProductCard = ({ product }) => {
 
                             className="text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
                         >
-                            View Details
+                           <Link to={`/productDetails/${_id}`} > View Details</Link>
                             <span className="text-lg">
                                 <MdOutlineLabelImportant />
                             </span>
