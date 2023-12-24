@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import navbar from "../../assets/home/navbar/navbar1.png"
 import { Icon } from '@iconify/react';
+import { AuthContext } from "../../context/AuthProvider";
 
 const Navbar = () => {
     const [isMobileMenu, setIsMobileMenu] = useState(false);
     const [fix, setFix] = useState(false);
 
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error));
+    }
 
     function setFixed() {
         if (window.scrollY >= 1) {
@@ -27,10 +34,18 @@ const Navbar = () => {
         <li className="flex"><Link to="" className='flex items-center text-xl text-gray-600 font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>BLOG</Link></li>
 
     </>
+
+    const account = <>
+        {user?.uid ?
+            <Link onClick={handleLogOut} className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Sign Out</Link>
+            :
+            <Link to={'/login'} className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Login</Link>
+        }
+    </>
     return (
         <div className="p-3">
             <header className={`${fix ? " p-2 bg-white fixed z-50 w-full duration-700" : "duration-700"}`}>
-                <div className= " flex justify-between h-16 mx-44 lg:mx-0 md:mx-0 sm:mx-0 ">
+                <div className=" flex justify-between h-16 mx-44 lg:mx-0 md:mx-0 sm:mx-0 ">
                     <Link to={"/"}  >
                         <div className="">
                             <img src={navbar} className="py-3 h-[80px]" alt="logo" />
@@ -44,7 +59,8 @@ const Navbar = () => {
                     </div>
                     <div className="items-center flex md:hidden sm:hidden">
                         <Link className="text-4xl text-red-500 mr-3"><Icon icon="mdi:cart-outline" /></Link>
-                        <Link to={'/login'} className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Login</Link>
+                        {account}
+
                     </div>
                     <div className="hidden md:block sm:block">
                         <button className="p-4 hidden lg:block md:block sm:block"
@@ -59,7 +75,7 @@ const Navbar = () => {
                             <ul className="absolute z-50 left-0 p-2 pb-5 shadow bg-base-100 w-full">
                                 {menuItem}
                                 <div className="mt-5">
-                                    <Link to={'/login'} className="self-center px-4 py-2 bg-gray-500 text-white font-semibold rounded-sm">Login</Link>
+                                {account}
                                 </div>
 
                             </ul>
