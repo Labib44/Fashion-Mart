@@ -19,7 +19,7 @@ const routers= createBrowserRouter([
             },
             {
                 path:'/productDetails/:id', element:<PrivateRouter><ProductDetails></ProductDetails></PrivateRouter>,
-                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/product/${params.id}`)
+                loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URI}/api/v1/product/${params.id}`)
             },
             {
                 path:'/login', element:<Login></Login>

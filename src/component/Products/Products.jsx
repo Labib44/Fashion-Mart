@@ -6,7 +6,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     const getMyApi = async () => {
-        const res = await axios.get("http://localhost:5000/api/v1/product")
+        const res = await axios.get(`${import.meta.env.VITE_SERVER_URI}/api/v1/product`)
         setProducts(res.data.data);
     }
 
