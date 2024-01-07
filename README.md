@@ -1,8 +1,27 @@
-# React + Vite
+# Fashion Mart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technology
+1. React Js 18 + Vite
+2. framer-motion
+3. React Router Dom
+4. tailwindcss
+5. dotenv
+6. swiper js
+7. axios
+8. react-hook-form
+9. 
 
-Currently, two official plugins are available:
+## Live : fashionmart-f78a9.web.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Authentication 
+. Firebase
+
+## How to Install and Run the Project for front-end
+
+1. yarn add 
+2. Yarn run dev
+
+
+## User Login
+1. hero.alom@gmail.com
+Password: 123456
