@@ -18,8 +18,11 @@ const routers= createBrowserRouter([
                 path:'/shop', element:<Shop></Shop>
             },
             {
-                path:'/productDetails/:id', element:<PrivateRouter><ProductDetails></ProductDetails></PrivateRouter>,
+                path:'/productDetails/:id', element:<ProductDetails></ProductDetails>,
                 loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URI}/api/v1/product/${params.id}`)
+            },
+            {
+                path:'/addCart', element:<PrivateRouter></PrivateRouter>
             },
             {
                 path:'/login', element:<Login></Login>

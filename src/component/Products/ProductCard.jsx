@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
         <div className="w-full relative group">
             <div className="max-w-80 max-h-80 relative overflow-y-hidden ">
                 <div>
-                    <img src={imageUrl} alt="" />
+                    <img src={imageUrl.img1} alt="" />
                 </div>
                 <div className="absolute top-6 left-8">
                     {/* {props.badge && <Badge text="New" />} */}

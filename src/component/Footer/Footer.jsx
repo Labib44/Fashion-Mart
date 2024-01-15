@@ -35,20 +35,20 @@ const Footer = () => {
                     <div className="flex flex-col space-y-4">
                         <h1 className='text-[18px] font-semibold px-16 lg:px-0 md:px-0 sm:px-0'>A Private Limited is the most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.</h1>
                         <div className="flex space-x-3 px-16 lg:px-0 md:px-0 sm:px-0">
-                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-gray-800 rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-white rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
                                 <a href="https://www.facebook.com/md.labib.9/" target="_blank" rel="noreferrer"><Icon icon="ic:round-facebook" className="text-2xl  " /></a>
                             </div>
-                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-gray-800 rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-white rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
                                 <a href="https://www.linkedin.com/in/labibur-rahman/" target="_blank" rel="noreferrer"><Icon icon="mdi:linkedin" className="text-2xl" /></a>
                             </div>
-                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-gray-800 rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-white rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
                                <a href="https://github.com/Labib44" target="_blank" rel="noreferrer"><Icon icon="uiw:github" className="text-2xl" /></a> 
                             </div>
-                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-gray-800 rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-white rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
                                 <Icon icon="mdi:twitter" className="text-2xl" />
                             </div>
 
-                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-gray-800 rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
+                            <div className="w-10 h-10 bg-white hover:bg-secondary text-secondary hover:text-white rounded-t-full rounded-br-full border-dashed border border-secondary duration-700 p-[6px]">
                                 <Icon icon="mdi:pinterest" className="text-2xl" />
                             </div>
                         </div>
@@ -69,7 +69,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col">
                             <h2 className= "font-bold text-2xl text-[#383e48]">Linkedin</h2>
-                            <div className={`" box arrow-bottom mt-4 p-5 "`}>
+                            <div className={`" box arrow-bottom mt-4 p-3 "`}>
                                 <p className="mb-3 lg:mb-3 md:mb-2 sm:mb-0">The full monty spiffing good time .</p>
                                 <Link className="text-[#383e48] hover:text-secondary duration-700">labib.vercel.app</Link>
                             </div>

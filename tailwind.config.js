@@ -9,7 +9,7 @@ export default {
       md: { min: "768px", max: "991px" },
       lg: { min: "992px", max: "1200px" },
       xl: { min: "1201px", max: "1280px" },
-      xxl: { min: "1281px", max: "1440px" },
+      xxl: { min: "1281px", max: "2480px" },
     },
 
     extend: {

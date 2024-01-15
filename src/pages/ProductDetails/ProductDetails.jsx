@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import Subscribe from "../../component/Subscribe/Subscribe";
 
 const ProductDetails = () => {
     const productData = useLoaderData();
@@ -10,10 +11,10 @@ const ProductDetails = () => {
 
     const [amount, setAmount] = useState(1);
     const [images, setImages] = useState({
-        img1: imageUrl,
-        img2: imageUrl,
-        img3: imageUrl,
-        img4: imageUrl,
+        img1: imageUrl.img1,
+        img2: imageUrl.img2,
+        img3: imageUrl.img3,
+        img4: imageUrl.img4,
     })
     const [activeImg, setActiveImage] = useState(images.img1)
 
@@ -21,15 +22,15 @@ const ProductDetails = () => {
     return (
         <div className="p-5 container mx-auto">
             <div className='grid grid-cols-2 sm:grid-cols-1 justify-between gap-16 md:gap-5 lg:gap-5 items-center my-20'>
-                <div className='flex flex-col gap-6 '>
+                <div className='flex flex-col gap-4 '>
                     <div className="">
-                        <img src={activeImg} alt="" className='w-full h-full aspect-square rounded-xl' />
+                        <img src={activeImg} alt="" className='h-[500px] w-[400px] rounded-xl' />
                     </div>
-                    <div className='flex flex-row justify-between h-24'>
-                        <img src={images.img1} alt="" className='w-24 h-24 rounded-md cursor-pointer' onClick={() => setActiveImage(images.img1)} />
-                        <img src={images.img2} alt="" className='w-24 h-24 rounded-md cursor-pointer' onClick={() => setActiveImage(images.img2)} />
-                        <img src={images.img3} alt="" className='w-24 h-24 rounded-md cursor-pointer' onClick={() => setActiveImage(images.img3)} />
-                        <img src={images.img4} alt="" className='w-24 h-24 rounded-md cursor-pointer' onClick={() => setActiveImage(images.img4)} />
+                    <div className='flex flex-row gap-5 h-24'>
+                        <img src={images.img1} alt="" className='w-20 h-24 rounded-md border-2 hover:border-red-400 duration-500 cursor-pointer' onClick={() => setActiveImage(images.img1)} />
+                        <img src={images.img2} alt="" className='w-20 h-24 rounded-md border-2 hover:border-red-400 duration-500 cursor-pointer' onClick={() => setActiveImage(images.img2)} />
+                        <img src={images.img3} alt="" className='w-20 h-24 rounded-md border-2 hover:border-red-400 duration-500 cursor-pointer' onClick={() => setActiveImage(images.img3)} />
+                        <img src={images.img4} alt="" className='w-20 h-24 rounded-md border-2 hover:border-red-400 duration-500 cursor-pointer' onClick={() => setActiveImage(images.img4)} />
                     </div>
                 </div>
                 {/* ABOUT */}
@@ -63,17 +64,19 @@ const ProductDetails = () => {
                     </div>
 
 
-                    <div className='flex flex-row items-center gap-12'>
+                    <div className='flex flex-row items-center gap-8'>
                         <div className='flex flex-row items-center'>
                             <h1 className="text-2xl font-bold text-gray-600 mr-2" >Quantity</h1>
                             <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl font-extrabold' onClick={() => setAmount((prev) => prev - 1)}>-</button>
                             <span className='py-4 px-6 rounded-lg'>{amount}</span>
                             <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl font-extrabold' onClick={() => setAmount((prev) => prev + 1)}>+</button>
                         </div>
-                        <Link to={'/addCart'} className='text-white px-5 py-2 rounded-xl bg-gray-500 hover:bg-[#FC5F7D] duration-700'>Add to Cart</Link>
+                        <Link to={'/addCart'} className='text-white text-sm px-4 py-2 rounded-xl bg-gray-500 hover:bg-[#FC5F7D] duration-700'>Add Cart</Link>
                     </div>
                 </div>
             </div>
+
+            <Subscribe></Subscribe>
         </div>
     );
 };
